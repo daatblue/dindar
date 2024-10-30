@@ -1,0 +1,40 @@
+/*box model*/
+.box-model {
+    width: 80px 80px;
+    padding: 25px;
+    border: 40px solid #374375;
+    margin: 60px;
+    background-color: beige;
+    text-align: justify;
+    position: relative;
+}
+/*outline*/
+.outline p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    outline-style: dotted;
+    outline-color: #374375;
+    outline-width: 5px;
+    outline-offset: 10px;
+    background-color: #899c64;
+    font-family: poppins;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+/*icons*/
+.icons {
+    padding-top: 20px;
+}
+.fa-brands.fa-instagram.fa-2x {
+    color: #374375;
+}
+.fa-brands.fa-pinterest.fa-2x {
+    color: #899c64;
+}
+
+.li {
+    list-style-type: circle;
+    list-style-position: outside;
+}

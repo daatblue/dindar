@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayz Bakerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="article.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+
+    <!--Header image-->
+    <header>
+        <img src="img/headerimg.svg">
+    </header>
+
+    <!--Form Contact Us-->
+        <form>
+            <div class="form-contact">
+                <h2>Contact Us</h2>
+            </div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+    
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Your e-mail">
+    
+            <label for="institution">Institution</label>
+            <input type="text" id="institution" placeholder="Your Institution">
+            <label for="message">Message</label>
+            <input type="text" id="message" placeholder="Your Message">
+            <br>
+            <button>Submit</button>
+            <br>
+        </form>
+        <br>
+        <br>
+        <br>
+
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p>
+        For delivery enquiries, please contact us through DM.
+        </p>
+        <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+    </div>
+    
+
+   
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+
+    <!--Footer-->
+    <div class="footer">
+        <footer>
+            <hr>
+            <h4>Copyright © 2024 | Dayz Bakerie</h4>
+            <h4>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</h4>
+        </footer>
+    </div>
+</body>
+</html>

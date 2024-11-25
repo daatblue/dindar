@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="latihan7.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Charm">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navbar-judul">
+            <a href="#"><h1>DayzBakerie</h1></a>
+        </div>
+
+        <div class="navbartoogle">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+    <!--Button-->
+    <div class="produk">
+        <p id="bakery">Risol</p>
+        <button type="button" onclick='document.getElementById("bakery")
+        .innerHTML="eaaaa"'>Buy</button>
+    </div>
+
+    <ol>
+        <h3><b>Click here to listen</b></h3>
+        <li><a href="https://on.soundcloud.com/Ed2n1T8ynGMfoZFQ6" target="_blank">Spider-Hoshi</a></li>
+        <li><a href="https://on.soundcloud.com/djpFAkfoG2QwKt5r7" target="_blank">Ruby-Woozi</a></li>
+        <li><a href="https://on.soundcloud.com/fhNKse88xN8QetSk8" target="_blank">Black Eye-Vernon</a></li>
+        <li><a href="https://on.soundcloud.com/Y9CFLQ28iUEidVWt8" target="_blank">Wait-DINO</a></li>
+        <li><a href="https://soundcloud.com/pledis_seventeen/tracks" target="_blank">Tracks by SEVENTEEN</a></li>
+    </ol>
+    <!--forms + id-->
+    <div class="outline"><h3>Subscribe to our newsletter</h3></div>
+    <form>
+        <label for="email">Type your email here</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Subscribe">
+    </form>
+</body>
+</html>

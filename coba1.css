@@ -1,0 +1,91 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #41549a;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    color: #ffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+li a:link, a:visited {
+    background-color: #41549a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+  }
+li a:hover, a:active {
+    background-color: #e3a7b7;
+}
+
+/*salinan dari yg sblmnya*/
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: "DM+Serif+Display", serif;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #c3ca78;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+nav div img {
+    width: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: "DM+Serif+Display";
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    justify-content: center;
+}
+nav ul li a:hover, a:active{
+    background-color: #e3a7b7;
+}
+/* Navigation bar */
+.container {
+    padding: 10px;
+    background-color: #41549a;
+}
+nav {
+    font-size: large;
+    text-align: center;
+    padding: 15px;
+}
+nav a {
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+nav a:hover, a:active {
+    background-color: #e3a7b7;
+}
+/* Image header */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }  
